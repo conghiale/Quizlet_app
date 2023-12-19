@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Our Quizlet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="subTitleForgotPassword">Provide your account\'s email for which you want to reset your password!</string>
+    <string name="subTitleUpdatePassword">Re-enter your current password and new password to update your password</string>
+    <string name="default_web_client_id" translatable="false">953683371731-92jqk160dvdb9mnq6t9g2mngl0mjtsel.apps.googleusercontent.com</string>
+    <string name="title">QUIZLET</string>
+    <string name="subtitle1">Knowledge of languages is the doorway to wisdom.</string>
+    <string name="subtitle2">Language is the road map of a culture. It tells you where its people come from and where they are going.</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="home">Home</string>
+    <string name="solution">Solution</string>
+    <string name="library">Library</string>
+    <string name="profile">Profile</string>
+
+    <string-array name="filter_topics">
+        <item>All</item>
+        <item>Created</item>
+        <item>Learned</item>
+    </string-array>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sortAll"
+        android:title="Tất cả"/>
+    <item
+        android:id="@+id/sortCreated"
+        android:title="Đã tạo"/>
+    <item
+        android:id="@+id/sortJoined"
+        android:title="Đã tham gia"/>
+</menu>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:padding="20dp"
+    android:id="@+id/layoutDialogContainer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="40dp"
+        android:background="@drawable/background_dialog">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/background_success"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ivImageIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintTop_toTopOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+            app:tint="@color/white" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="CATEGORY"
+            android:textColorHint="@color/hint2"
+            app:boxStrokeColor="@color/lavender"
+            app:hintTextColor="@color/lavender"
+            app:cursorColor="@color/lavender"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintBottom_toBottomOf="parent" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="textCapCharacters"
+                android:lineSpacingExtra="4dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnActionNo"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/background_btn_neutral"
+        app:layout_constraintTop_toBottomOf="@id/layoutDialog"
+        app:layout_constraintEnd_toStartOf="@id/btnActionYes"
+        app:layout_constraintBottom_toBottomOf="@id/layoutDialog"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnActionYes"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/background_btn_success"
+        app:layout_constraintTop_toBottomOf="@id/layoutDialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/layoutDialog"
+        app:layout_constraintStart_toEndOf="@id/btnActionNo"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

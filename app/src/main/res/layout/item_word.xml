@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wajahatkarim3.easyflipview.EasyFlipView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardFlipView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:flipOnTouch="false"
+    app:flipEnabled="true"
+    app:flipDuration="400"
+    app:flipType="horizontal"
+    app:flipFrom="front">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/flash_card_layout_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4bcffa"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvWordDefineStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="12dp"
+                android:text="Known"
+                android:textColor="@color/sweet_garden"
+                android:textSize="20sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/tvContentDefine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="DEFINE 1"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/flash_card_layout_front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4bcffa"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvWordTermStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="12dp"
+                android:text="Known"
+                android:textColor="@color/sweet_garden"
+                android:textSize="20sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/tvContentTerm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="TERM 1"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</com.wajahatkarim3.easyflipview.EasyFlipView>

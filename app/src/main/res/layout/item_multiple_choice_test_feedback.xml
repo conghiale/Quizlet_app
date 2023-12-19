@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="horizontal"
+    android:paddingTop="48dp"
+    android:paddingBottom="28dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/titleFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You're progressing!aaaaaaaaaaaaaa aaaaa "
+            android:textColor="@color/yellow"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:maxLines="3"/>
+
+        <TextView
+            android:id="@+id/subTitleFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next, review the vocabularies you miss with Learn until you're good mode."
+            android:textSize="16sp"
+            android:maxLines="4"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivFeedback"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/light"
+        android:paddingHorizontal="8dp" />
+
+</LinearLayout>

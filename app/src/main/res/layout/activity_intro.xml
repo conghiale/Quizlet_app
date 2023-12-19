@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ui.activity.IntroActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/lay_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:paddingHorizontal="28dp" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:paddingBottom="15dp"
+            app:ci_drawable="@drawable/ic_brightness_1_active_24dp"
+            app:ci_drawable_unselected="@drawable/ic_brightness_1_inactive_24dp"
+            app:ci_height="5dp"
+            app:ci_width="5dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_one"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:letterSpacing="0.0265"
+            android:paddingTop="20.3dp"
+            android:paddingBottom="12.9dp"
+            android:text="NEXT EDUCATE"
+            android:textColor="@color/my_fav"
+            android:textSize="14.3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:lineSpacingExtra="4.7sp"
+            android:text="@string/title"
+            android:textColor="@color/blackTxt"
+            android:textSize="23.3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.5dp"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:letterSpacing="0.0265"
+            android:text="@string/subtitle1"
+            android:textColor="@color/blackTxt"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.5dp"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:letterSpacing="0.0265"
+            android:text="@string/subtitle2"
+            android:textColor="@color/blackTxt"
+            android:textSize="13dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tvGetStarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25.1dp"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:letterSpacing="0.0265"
+            android:text="@string/get_started"
+            android:textColor="@color/fav"
+            android:textSize="15.7dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

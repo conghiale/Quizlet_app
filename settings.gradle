@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        //        com.github.ybq:Android-SpinKit:1.4.0
+        maven { url "https://jitpack.io" }
+    }
+}
+
+rootProject.name = "Our Quizlet"
+include ':app'

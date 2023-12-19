@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.nhom12.ourquizlet.ui.fragment.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_solution"
+        android:name="com.nhom12.ourquizlet.ui.fragment.SolutionFragment"
+        android:label="@string/solution"
+        tools:layout="@layout/fragment_solution" />
+
+    <fragment
+        android:id="@+id/navigation_library"
+        android:name="com.nhom12.ourquizlet.ui.fragment.LibraryFragment"
+        android:label="@string/library"
+        tools:layout="@layout/fragment_library" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.nhom12.ourquizlet.ui.fragment.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

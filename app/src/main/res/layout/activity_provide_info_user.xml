@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#485460">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_01"
+        android:orientation="vertical"
+        android:paddingVertical="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
+            android:hint="Name"
+            android:labelFor="@+id/etName"
+            android:textColorHint="@color/hint2"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/white"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/white"
+            app:placeholderText="Ex: user123"
+            app:placeholderTextColor="@color/hint2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:drawableStart="@drawable/icon_person"
+                android:drawableTint="@color/hint2"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:inputType="text|textPersonName"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
+            android:hint="Age"
+            android:labelFor="@+id/Age"
+            android:textColorHint="@color/hint2"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/white"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/white"
+            app:placeholderText="Ex: 21"
+            app:placeholderTextColor="@color/hint2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAge"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:drawableStart="@drawable/icon_contact"
+                android:drawableTint="@color/hint2"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
+            android:hint="Phone Number"
+            android:labelFor="@+id/etPhoneNumber"
+            android:textColorHint="@color/hint2"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/white"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/white"
+            app:placeholderText="Ex: 0823456789"
+            app:placeholderTextColor="@color/hint2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:drawableStart="@drawable/icon_phone"
+                android:drawableTint="@color/hint2"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/image_2" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView6"
+            app:srcCompat="@drawable/layers_color" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Provide \nInfo User"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <CheckBox
+        android:id="@+id/cbVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Verify all the above information is correct"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="32dp"
+        style="@android:style/Widget.Button"
+        android:background="@drawable/background_btn"
+        android:text="Save"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/cbVerify" />
+</androidx.constraintlayout.widget.ConstraintLayout>

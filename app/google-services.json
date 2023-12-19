@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "953683371731",
+    "project_id": "quizlet-416b3",
+    "storage_bucket": "quizlet-416b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953683371731:android:c65782b9386cd011ecd626",
+        "android_client_info": {
+          "package_name": "com.example.ui_login_design_02_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953683371731-dcvqp2r9hrvegp7g20a13ra8gmanmujj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ui_login_design_02_app",
+            "certificate_hash": "c045dee9dc869cc0a89bd0777131ef396ca8a925"
+          }
+        },
+        {
+          "client_id": "953683371731-92jqk160dvdb9mnq6t9g2mngl0mjtsel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjIvw0l6rdEcoqJKtgK5gc9VLDqor0pBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953683371731-92jqk160dvdb9mnq6t9g2mngl0mjtsel.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953683371731:android:3a19b141ad2a10c1ecd626",
+        "android_client_info": {
+          "package_name": "com.nhom12.ourquizlet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953683371731-92jqk160dvdb9mnq6t9g2mngl0mjtsel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjIvw0l6rdEcoqJKtgK5gc9VLDqor0pBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953683371731-92jqk160dvdb9mnq6t9g2mngl0mjtsel.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.activity.SetUpStudyActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AppBarLayoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:theme="@style/Theme.Quizlet_app.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#d2dae2"
+            android:layout_gravity="start"
+            android:theme="@style/Theme.Quizlet_app.PopupOverlay" >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivCloseToolbar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/close_solid"
+                app:tint="@color/yellow"
+                android:layout_gravity="start"
+                android:paddingHorizontal="8dp"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/AppBarLayoutToolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="8dp">
+        <LinearLayout
+            android:id="@+id/TitleTestTopic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/logoPracticeTestIcon"
+            app:layout_constraintBottom_toBottomOf="@id/logoPracticeTestIcon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTopicName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="SH21-93 READING"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Set up the test"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/logoPracticeTestIcon"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/practice_test_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="center"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/percentUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/TitleTestTopic"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvTextScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Your most recent score: "
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPercentScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvTextScore"
+                android:text="33%"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvLine"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/tvTextScore"
+                android:background="@drawable/background_line"
+                android:layout_marginTop="12dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/numberOfQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/percentUser"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of vocabularies "
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="(tối đa 15)"
+                android:textColor="@color/purple_200"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etNumberOfWords"
+                android:layout_width="100dp"
+                android:layout_height="64dp"
+                android:layout_gravity="end"
+                android:background="@drawable/background_et_01"
+                android:padding="16dp"
+                android:text="15"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/languageQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/numberOfQuestion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Language of terms "
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvLanguageQuestion"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:hint="Language"
+                android:textColorHint="@color/lavender"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteLanguageTerm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_select_language"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    android:contentDescription="Please select the language of the word"
+                    tools:ignore="HardcodedText" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/languageAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/languageQuestion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Language of define "
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tvLanguageAnswer"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:hint="Language"
+                android:textColorHint="@color/lavender"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteLanguageDefine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_select_language"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    android:contentDescription="Please select the language of the word"
+                    tools:ignore="HardcodedText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerShuffle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/languageAnswer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Shuffle "
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/scShuffle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:showText="true"
+                android:textSize="20sp"
+                android:thumb="@drawable/thumb"
+                app:track="@drawable/track"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnStartMultipleChoiceTest"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            style="@android:style/Widget.Button"
+            android:text="Start taking the test"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/background_btn_02"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnStartFillInWord"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"
+            style="@android:style/Widget.Button"
+            android:text="Start taking the test"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/background_btn_02"
+            android:visibility="gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
